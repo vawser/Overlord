@@ -1,0 +1,40 @@
+﻿#-------------------------------------------------------
+# Changelog
+#-------------------------------------------------------
+
+
+#-------------------------------------------------------
+# Features
+#-------------------------------------------------------
+Capture enemies and use them against their own to traverse the Shattered Lands and claim the Elden Throne.
+
+# Combat System
+Use Spirit Summon system for the enemy combat part. Detach the buddy stone requirement.
+
+Player will deal no direct damage. 
+Instead, weapons and spells will provide effects on hit that help out the spirit summon or weaken the enemy in some way.
+
+Examples:
+    Whip: boosts spirit summon damage, stacking per hit, but damages them too.
+    Rousing Flames: heals spirit summons
+    
+In general, the player should still have autonomy within a fight and have to make decisions, but rather the focus is on surviving and helping out the spirit summon, rather than dealing damage.
+
+# Capture System
+Player uses a 'Pokeball' item to capture enemies.
+ Display process with phantom shaders: when used the enemy will go white, and then flash 3 times based on the result:
+  Catch: Green, Green, Green.
+   Enemy will disappear in a puff of smoke, spirit summon item will be awarded.
+   
+  Near Miss: Green, Green, Red.
+   Enemy will be easier to catch if capture is attempted again.
+   
+  Miss: Red, Red, Red.
+  
+ Capture chance is rolled in EMEVD, affected by:
+    Enemy Type
+    Enemy HP
+    Player buff items
+    
+# Collection System
+Collection is rewarded via a NPC, which will grant boss spirit summons based on collection progress.
